@@ -4073,7 +4073,7 @@ std::string validate(const FullPrintConfig &cfg)
 
     // --filament-diameter
     for (double fd : cfg.filament_diameter.values)
-        if (fd < 1)
+        if (fd < .4)
             return "Invalid value for --filament-diameter";
 
     // --nozzle-diameter
